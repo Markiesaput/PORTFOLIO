@@ -1,0 +1,228 @@
+
+/* ---------- LOGIN PAGE BACKGROUND ---------- */
+body.login-bg {
+  background-image: url("../images/QUINTILIS_2.png");
+  background-size: cover;    
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;  
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ---------- LOGIN PAGE BODY ---------- */
+body.login-bg {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/QUINTILIS_2.png"); /* your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+/* ---------- LOGIN CARD ---------- */
+.login-card {
+  width: 350px;
+  padding: 40px;
+  border-radius: 25px;
+
+  /* fully transparent background, only blur */
+  background: rgba(255, 255, 255, 0); 
+
+  /* frosted glass effect */
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  /* realistic water-like border */
+  border: 2px solid rgba(255,255,255,0.25);
+  box-shadow: 
+      0 8px 30px rgba(0,0,0,0.1),        /* soft shadow */
+      inset 0 0 10px rgba(255,255,255,0.2); /* subtle inner glow for watery effect */
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ---------- INPUT FIELDS ---------- */
+.login-card input {
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.3);
+  background: rgba(255,255,255,0.1);
+  color: white;
+  font-size: 16px;
+  backdrop-filter: blur(5px);
+  transition: 0.3s;
+}
+
+.login-card input::placeholder {
+  color: rgba(255,255,255,0.6);
+}
+
+.login-card input:focus {
+  border-color: rgba(255,255,255,0.6);
+  outline: none;
+  background: rgba(255,255,255,0.15);
+}
+
+/* ---------- LOGIN BUTTON ---------- */
+.login-card button {
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  font-size: 16px;
+  background: rgba(255,255,255,0.25);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  backdrop-filter: blur(5px);
+}
+
+.login-card button:hover {
+  background: rgba(255,0,0,0.45);
+}
+
+/* ---------- ERROR MESSAGE ---------- */
+.error {
+  color: #ff4c4c;
+  text-align: center;
+  font-size: 14px;
+}
+
+
+
+
+
+/* ---------- HOMEPAGE ---------- */
+
+
+
+/* Make navbar links align properly */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 20px; /* space between login/logout */
+}
+
+body.home-bg {
+  background-image:
+    linear-gradient(
+      rgba(0,0,0,0.75),   /* top 75% transparent */
+      rgba(0,0,0,0.50)    /* bottom 50% transparent */
+    ),
+    url("../images/wisdom.png");
+
+  background-size: cover;    
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;  
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ---------- HOME CONTAINER ---------- */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 50px 20px;
+  text-align: center;
+  min-height: calc(100vh - 80px); /* leave space for navbar */
+}
+
+/* ---------- HERO SECTION ---------- */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.hero-text h2 {
+  font-size: 32px;
+  color: white;
+}
+
+.hero-text p {
+  font-size: 18px;
+  color: white;
+}
+
+/* Placeholder for hero image */
+.hero-image.placeholder {
+  width: 200px;
+  height: 200px;
+  background: #ccc;
+  border-radius: 15px;
+}
+
+.hero-text {
+  position: relative;
+  width: 90vw;              /* 90% of viewport width */
+  max-width: 1200px;        /* optional, so it doesn’t stretch too far on large screens */
+  padding: 40px 20px;
+  background: rgba(0,0,0,0.6);
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* ---------- CENTER BUTTONS ---------- */
+.home-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.home-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: rgba(255,255,255,0.2);
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 12px;
+  backdrop-filter: blur(5px);
+  transition: all 0.3s;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.home-btn:hover {
+  background: rgba(255,255,255,0.35);
+  transform: scale(1.05);
+}
+
+
+

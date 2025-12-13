@@ -1,0 +1,689 @@
+/* ============================================================
+   LOGIN PAGE STYLES (login.html)
+   ============================================================ */
+
+/* Login Page Background */
+body.login-bg {
+  background-image: url("../images/QUINTILIS_2.png");
+  background-size: cover;    
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;  
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+/* Login Card */
+.login-card {
+  width: 350px;
+  padding: 40px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0); /* transparent + blur effect */
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 2px solid rgba(255,255,255,0.25);
+  box-shadow: 
+      0 8px 30px rgba(0,0,0,0.1),
+      inset 0 0 10px rgba(255,255,255,0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Login Inputs */
+.login-card input {
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.3);
+  background: rgba(255,255,255,0.1);
+  color: white;
+  font-size: 16px;
+  backdrop-filter: blur(5px);
+  transition: 0.3s;
+}
+
+.login-card input::placeholder {
+  color: rgba(255,255,255,0.6);
+}
+
+.login-card input:focus {
+  border-color: rgba(255,255,255,0.6);
+  outline: none;
+  background: rgba(255,255,255,0.15);
+}
+
+/* Login Button */
+.login-card button {
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  font-size: 16px;
+  background: rgba(255,255,255,0.25);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  backdrop-filter: blur(5px);
+}
+
+.login-card button:hover {
+  background: rgba(255,0,0,0.45);
+}
+
+/* Login Error Message */
+.error {
+  color: #ff4c4c;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* ============================================================
+   HOMEPAGE / ABOUT PAGE / CONTACT PAGE STYLES (index.html, about.html, contact.html)
+   ============================================================ */
+
+/* Navbar (All Pages) */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 20px;
+}
+
+/* Background for Homepage / About / Projects */
+body.home-bg {
+  background-image: 
+    linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.5)),
+    url("../images/SHIGEO.png");
+  background-size: cover;    
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;  
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+/* Page Zoom-in Animation (All Pages) */
+body {
+  animation: pageZoom 1s ease-out forwards;
+}
+
+@keyframes pageZoom {
+  0% {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+/* Her Section (Homepage) */
+.her {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: -1000px;
+}
+.her-text {
+  width: 100%;
+  max-width: 900px;
+  padding: 30px 1000000px;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0, 0, 0, 0.55); /* semi-transparent dark bar */
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4); /* subtle shadow */
+}
+
+.her-text h2 {
+  font-size: 50px;
+  margin: 0 20px;
+}
+
+.her-text p {
+  font-size: 20px;
+  margin: 10px 20px 0;
+}
+
+/* Hero Section (Homepage) */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: -1000px;
+}
+
+/* Her Section (KONTAKT) */
+.nickher {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: -1000px;
+}
+.nickher-text {
+  width: 100%;
+  max-width: 900px;
+  padding: 30px 1000000px;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0, 0, 0, 0.55); /* semi-transparent dark bar */
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4); /* subtle shadow */
+}
+
+.nickher-text h2 {
+  font-size: 50px;
+  margin: 0 20px;
+}
+
+.nickher-text p {
+  font-size: 20px;
+  margin: 10px 20px 0;
+}
+
+/* Hero Section (Homepage) */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: -1000px;
+}
+
+
+/* ==========================
+   HERO TEXT READABILITY
+   ========================== */
+.hero-text {
+  width: 100%;
+  max-width: 900px;
+  padding: 30px 1000000px;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0, 0, 0, 0.55); /* semi-transparent dark bar */
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4); /* subtle shadow */
+}
+
+/* Optional: make headings pop */
+.hero-text h2, .hero-text p {
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+}
+
+
+.hero-text h2 {
+  font-size: 50px;
+  margin: 0 20px;
+}
+
+.hero-text p {
+  font-size: 20px;
+  margin: 10px 20px 0;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: -1000px;
+}
+
+/* ==========================
+   HERO TEXT READABILITY
+   ========================== */
+
+
+.hero-text h2 {
+  font-size: 50px;
+  margin: 0 20px;
+}
+
+.hero-text p {
+  font-size: 20px;
+  margin: 10px 20px 0;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: -1000px;
+}
+
+/* Hero Image */
+.hero-image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; /* make perfectly round */
+  object-fit: cover;
+}
+
+/* Home / About Container */
+.home-container {
+  margin-top: 30px;  /* adjust to fix scroll bug */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 50px 20px;
+  text-align: center;
+  min-height: calc(100vh - 80px);
+}
+
+/* Buttons (Homepage + About + Projects) */
+.home-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: rgba(255,255,255,0.2);
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 12px;
+  backdrop-filter: blur(5px);
+  transition: all 0.3s;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.home-btn:hover {
+  background: rgba(0,0,0,0.35);
+  transform: scale(1.05);
+}
+
+/* Logout Button */
+#logoutBtn {
+  margin-top: 0px;
+}
+
+/* ============================================================
+   PROJECTS PAGE STYLES (projects.html)
+   ============================================================ */
+
+.projects-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 120px auto 50px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.project {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.4);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+}
+
+.project p {
+  font-size: 18px;
+  color: white;
+  margin-top: 15px;
+  max-width: 800px;
+  text-align: center;
+}
+
+/* Project Gallery Images */
+.project-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.project img {
+  border-radius: 10px;
+}
+
+.projectspecial-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 120px auto 50px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.projectspecial {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.4);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projectspecial h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+}
+
+.projectspecial p {
+  font-size: 18px;
+  color: white;
+  margin-top: 15px;
+  max-width: 800px;
+  text-align: center;
+}
+
+/* Project Gallery Images */
+.projectspecial-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.projectspecial img {
+  width: 100%;          /* 🔑 follow container width */
+  height: auto;         /* keep aspect ratio */
+  border-radius: 10px;
+  object-fit: contain;  /* prevent cropping */
+}
+
+/* ============================================================
+   CONTACT PAGE SPECIFIC STYLES (contact.html)
+   ============================================================ */
+body.contact-bg {
+  background-color: #222;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+header.contact-header {
+  background: black;
+  padding: 20px 0;
+  width: 100%;
+}
+
+header.contact-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+nav.contact-nav {
+  margin-top: 10px;
+}
+
+nav.contact-nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Contact Social Icons */
+.social-links img {
+  width: 120px;
+  margin: 20px;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+  transform: scale(1.1);
+}
+
+/* Email Box */
+.email-box {
+  background: #333;
+  display: inline-block;
+  padding: 15px 25px;
+  margin-top: 20px;
+  border-radius: 12px;
+  font-size: 1.2rem;
+}
+
+/* ===== DARK HEADER (All Pages using .navbar) ===== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  z-index: 1000;
+
+  /* 👇 reduce height */
+  padding: 10px 50px;   /* was 20px 50px */
+}
+
+/* ===========================
+   NAVIGATION BUTTON STYLES
+   (Home / Projects / Contact / Login / Logout)
+   =========================== */
+
+.navbar nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+
+  padding: 8px 18px;
+  border-radius: 12px;
+
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(6px);
+
+  transition: all 0.25s ease;
+}
+
+/* Hover effect */
+.navbar nav a:hover {
+  background: rgba(0, 0, 0, 0.45);
+  transform: translateY(-2px);
+}
+
+/* Active page highlight (optional class) */
+.navbar nav a.active {
+  background: rgba(255, 255, 255, 0.35);
+  color: black;
+}
+
+/* ============================================================
+   CONTACT PAGE (contact.html)
+   ============================================================ */
+
+.contact-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.contact-card {
+  width: 100%;
+  max-width: 520px;
+
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(12px);
+
+  padding: 30px;   /* was 40px */
+  border-radius: 22px;
+
+  text-align: center;
+  box-shadow: 0 0 25px rgba(0,0,0,0.45);
+}
+
+
+.contact-card h3 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.social-links img {
+  width: 90px;
+  height: 90px;
+  border-radius: 18px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-links img:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 25px rgba(255,255,255,0.4);
+}
+
+.email-box {
+  display: inline-block;
+  padding: 15px 25px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 14px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* ===== Smaller Hero for Contact Page ===== */
+.contact-container .hero-text h2 {
+  font-size: 38px;   /* was 50px */
+}
+
+.contact-container .hero-text p {
+  font-size: 16px;   /* was 20px */
+}
+.contact-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 120px auto 60px; /* accounts for fixed navbar */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+
+  padding: 20px;
+}
+
+/* ABOUT! */
+
+/* =========================
+   ABOUT SECTION BOX
+   ========================= */
+
+.about {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.about-card {
+  max-width: 1000px;
+  width: 100%;
+
+  display: flex;
+  gap: 40px;
+  align-items: center;
+
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.45);
+}
+
+/* Profile Image */
+.about-img {
+  width: 260px;
+  height: 260px;
+  border-radius: 20px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Text Content */
+.about-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: white;
+}
+
+.about-info h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.about-info p {
+  font-size: 17px;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+/* Button spacing */
+.about-info .home-btn {
+  align-self: flex-end;
+}

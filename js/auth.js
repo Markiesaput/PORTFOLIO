@@ -36,9 +36,13 @@ if (logoutBtn) {
   });
 }
 
+if (!localStorage.getItem("loggedIn")) {
+  window.location.href = "login.html";
+}
 // Hide login link if logged in
 const loginLink = document.getElementById("loginLink");
 if (loginLink && localStorage.getItem("loggedIn") === "true") {
   loginLink.style.display = "none";
   if (logoutBtn) logoutBtn.style.display = "inline";
 }
+
